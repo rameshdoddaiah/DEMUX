@@ -1,0 +1,50 @@
+Config: 
+ {
+  "model_save_path": "/Users/prathyushsp/Git/TimeSeriesSaliencyMaps/nte/trained_models/burst/",
+  "model": "dnn",
+  "loss": "ce",
+  "model_name": "burst_time_difference_existence_dnn_ce",
+  "dependency_meta": {
+    "md5": "60cad613c35b07e0b23d8f5a5365e80b",
+    "timestamp": "2020-05-07 01:30:43.876530"
+  },
+  "timesteps": 100,
+  "num_classes": 2,
+  "rnn_config": {
+    "ninp": 1,
+    "nhid": 10,
+    "nlayers": 1,
+    "nclasses": 2
+  },
+  "dnn_config": {
+    "layers": [
+      50,
+      20,
+      2
+    ]
+  },
+  "batch_size": 32,
+  "num_epochs": 10,
+  "learning_rate": 0.001
+}
+Model: 
+ Linear(
+  (layers): ModuleList(
+    (0): Linear(in_features=100, out_features=50, bias=True)
+    (1): Linear(in_features=50, out_features=20, bias=True)
+    (2): Linear(in_features=20, out_features=2, bias=True)
+  )
+  (sigmoid_activation): Sigmoid()
+  (softmax_activation): Softmax(dim=-1)
+)
+Epoch [1/10] | Loss: 0.6554 |  Accuracy: 0.8013 | Prediction Confidence: 0.53 | Class 0:0.5326 | Class 1:0.5187
+Epoch [2/10] | Loss: 0.3702 |  Accuracy: 1.0000 | Prediction Confidence: 0.70 | Class 0:0.7069 | Class 1:0.6871
+Epoch [3/10] | Loss: 0.1086 |  Accuracy: 1.0000 | Prediction Confidence: 0.90 | Class 0:0.9038 | Class 1:0.8923
+Epoch [4/10] | Loss: 0.0479 |  Accuracy: 1.0000 | Prediction Confidence: 0.95 | Class 0:0.9581 | Class 1:0.9485
+Epoch [5/10] | Loss: 0.0290 |  Accuracy: 1.0000 | Prediction Confidence: 0.97 | Class 0:0.9750 | Class 1:0.9678
+Epoch [6/10] | Loss: 0.0201 |  Accuracy: 1.0000 | Prediction Confidence: 0.98 | Class 0:0.9829 | Class 1:0.9773
+Epoch [7/10] | Loss: 0.0150 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9874 | Class 1:0.9828
+Epoch [8/10] | Loss: 0.0118 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9902 | Class 1:0.9865
+Epoch [9/10] | Loss: 0.0095 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9921 | Class 1:0.9890
+Epoch [10/10] | Loss: 0.0079 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9935 | Class 1:0.9908
+Test Accuracy 100.0 | Confidence ({0: array([0.9940146], dtype=float32), 1: array([0.99173146], dtype=float32)}, 0.9928731)

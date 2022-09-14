@@ -1,0 +1,25 @@
+Task is to classify heatbeat recordings into 1 of 5 classes.
+
+Heartbeat recordings were gathered from both the iStethoscope Pro iPhone app and from clinical trials using the the digital stethoscope DigiScope.
+The time series represent the change in amplitude over time during an examination of patients suffering from common arrhythmias.
+All instances were resampled to 4,000Hz and truncated to the shortest instance length.
+
+Original data can be found here:
+https://www.kaggle.com/kinguistics/heartbeat-sounds#set_a.csv
+
+Original paper:
+Bentley P, Nordehn G, Coimbra M, Mannor S, Getz R. The pascal classifying heart sounds challenge 2011 (chsc2011) results. See http://www. peterjbentley. com/heartchallenge/index. html. 2011.
+
+Correspondence should be addressed to Peter Bentley:
+p.bentley@cs.ucl.ac.uk
+
+Instances: 606
+Time series length: 3,053
+Classes:
+- Artifact (40 cases)
+- ExtraStole (46 cases)
+- Murmur (129 cases)
+- Normal (351 cases)
+- ExtraHLS (40 cases)
+
+Default train test split created through a random partition.

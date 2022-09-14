@@ -1,0 +1,85 @@
+Config: 
+ {
+  "model_save_path": "./trained_models/burst10/",
+  "model": "rnn",
+  "loss": "ce",
+  "model_name": "burst_strength_rnn_ce",
+  "dependency_meta": {
+    "md5": "c9763ed74fc84b837598f16269313dc2",
+    "timestamp": "2020-05-11 23:48:31.632740"
+  },
+  "timesteps": 10,
+  "num_classes": 2,
+  "rnn_config": {
+    "ninp": 1,
+    "nhid": 10,
+    "nlayers": 1,
+    "nclasses": 2
+  },
+  "dnn_config": {
+    "layers": [
+      50,
+      20,
+      2
+    ]
+  },
+  "batch_size": 32,
+  "num_epochs": 50,
+  "learning_rate": 0.001
+}
+Model: 
+ RNN(
+  (rnn_cell): GRU(1, 10, batch_first=True)
+  (fc1): Linear(in_features=10, out_features=2, bias=True)
+)
+Epoch [1/50] | Loss: 0.6968 |  Accuracy: 0.4938 | Prediction Confidence: nan | Class 0:nan | Class 1:0.5416
+Epoch [2/50] | Loss: 0.6872 |  Accuracy: 0.5487 | Prediction Confidence: 0.51 | Class 0:0.5055 | Class 1:0.5165
+Epoch [3/50] | Loss: 0.6801 |  Accuracy: 0.6100 | Prediction Confidence: 0.52 | Class 0:0.5138 | Class 1:0.5326
+Epoch [4/50] | Loss: 0.6650 |  Accuracy: 0.6438 | Prediction Confidence: 0.54 | Class 0:0.5278 | Class 1:0.5533
+Epoch [5/50] | Loss: 0.5540 |  Accuracy: 0.8463 | Prediction Confidence: 0.59 | Class 0:0.6024 | Class 1:0.5858
+Epoch [6/50] | Loss: 0.2184 |  Accuracy: 1.0000 | Prediction Confidence: 0.81 | Class 0:0.8147 | Class 1:0.8026
+Epoch [7/50] | Loss: 0.0714 |  Accuracy: 1.0000 | Prediction Confidence: 0.93 | Class 0:0.9234 | Class 1:0.9376
+Epoch [8/50] | Loss: 0.0419 |  Accuracy: 1.0000 | Prediction Confidence: 0.96 | Class 0:0.9536 | Class 1:0.9624
+Epoch [9/50] | Loss: 0.0298 |  Accuracy: 1.0000 | Prediction Confidence: 0.97 | Class 0:0.9667 | Class 1:0.9726
+Epoch [10/50] | Loss: 0.0229 |  Accuracy: 1.0000 | Prediction Confidence: 0.98 | Class 0:0.9741 | Class 1:0.9784
+Epoch [11/50] | Loss: 0.0184 |  Accuracy: 1.0000 | Prediction Confidence: 0.98 | Class 0:0.9790 | Class 1:0.9824
+Epoch [12/50] | Loss: 0.0153 |  Accuracy: 1.0000 | Prediction Confidence: 0.98 | Class 0:0.9825 | Class 1:0.9852
+Epoch [13/50] | Loss: 0.0129 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9851 | Class 1:0.9874
+Epoch [14/50] | Loss: 0.0110 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9871 | Class 1:0.9891
+Epoch [15/50] | Loss: 0.0096 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9888 | Class 1:0.9905
+Epoch [16/50] | Loss: 0.0084 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9901 | Class 1:0.9916
+Epoch [17/50] | Loss: 0.0074 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9912 | Class 1:0.9926
+Epoch [18/50] | Loss: 0.0066 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9922 | Class 1:0.9933
+Epoch [19/50] | Loss: 0.0059 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9930 | Class 1:0.9940
+Epoch [20/50] | Loss: 0.0053 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9937 | Class 1:0.9946
+Epoch [21/50] | Loss: 0.0048 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9943 | Class 1:0.9951
+Epoch [22/50] | Loss: 0.0043 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9948 | Class 1:0.9956
+Epoch [23/50] | Loss: 0.0039 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9953 | Class 1:0.9960
+Epoch [24/50] | Loss: 0.0036 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9957 | Class 1:0.9963
+Epoch [25/50] | Loss: 0.0033 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9960 | Class 1:0.9966
+Epoch [26/50] | Loss: 0.0030 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9964 | Class 1:0.9969
+Epoch [27/50] | Loss: 0.0028 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9966 | Class 1:0.9971
+Epoch [28/50] | Loss: 0.0025 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9969 | Class 1:0.9973
+Epoch [29/50] | Loss: 0.0023 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9971 | Class 1:0.9975
+Epoch [30/50] | Loss: 0.0022 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9973 | Class 1:0.9977
+Epoch [31/50] | Loss: 0.0020 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9975 | Class 1:0.9979
+Epoch [32/50] | Loss: 0.0019 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9977 | Class 1:0.9980
+Epoch [33/50] | Loss: 0.0017 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9979 | Class 1:0.9982
+Epoch [34/50] | Loss: 0.0016 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9980 | Class 1:0.9983
+Epoch [35/50] | Loss: 0.0015 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9982 | Class 1:0.9984
+Epoch [36/50] | Loss: 0.0014 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9983 | Class 1:0.9985
+Epoch [37/50] | Loss: 0.0013 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9984 | Class 1:0.9986
+Epoch [38/50] | Loss: 0.0012 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9985 | Class 1:0.9987
+Epoch [39/50] | Loss: 0.0011 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9986 | Class 1:0.9988
+Epoch [40/50] | Loss: 0.0011 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9987 | Class 1:0.9988
+Epoch [41/50] | Loss: 0.0010 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9988 | Class 1:0.9989
+Epoch [42/50] | Loss: 0.0009 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9988 | Class 1:0.9990
+Epoch [43/50] | Loss: 0.0009 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9989 | Class 1:0.9990
+Epoch [44/50] | Loss: 0.0008 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9990 | Class 1:0.9991
+Epoch [45/50] | Loss: 0.0008 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9990 | Class 1:0.9992
+Epoch [46/50] | Loss: 0.0007 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9991 | Class 1:0.9992
+Epoch [47/50] | Loss: 0.0007 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9991 | Class 1:0.9992
+Epoch [48/50] | Loss: 0.0007 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9992 | Class 1:0.9993
+Epoch [49/50] | Loss: 0.0006 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9992 | Class 1:0.9993
+Epoch [50/50] | Loss: 0.0006 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9993 | Class 1:0.9994
+Test Accuracy 100.0 | Confidence ({0: array([0.9992553], dtype=float32), 1: array([0.99948895], dtype=float32)}, 0.9993721)

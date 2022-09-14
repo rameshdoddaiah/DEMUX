@@ -1,0 +1,135 @@
+Config: 
+ {
+  "model_save_path": "/tmp/",
+  "model": "rnn",
+  "loss": "ce",
+  "model_name": "Trace_mc_rnn_ce_mc",
+  "dependency_meta": "",
+  "timesteps": 11,
+  "num_classes": 4,
+  "rnn_config": {
+    "ninp": 25,
+    "nhid": 1000,
+    "nlayers": 3,
+    "nclasses": 4
+  },
+  "dnn_config": {
+    "layers": [
+      2100,
+      900,
+      300,
+      4
+    ]
+  },
+  "window_size": 10,
+  "batch_size": 32,
+  "num_epochs": 100,
+  "learning_rate": 0.001
+}
+Model: 
+ RNN(
+  (rnn_cell): GRU(25, 1000, num_layers=3, batch_first=True)
+  (fc1): Linear(in_features=1000, out_features=4, bias=True)
+)
+Epoch[1/100] | Loss:1.1724 |Acc: 48.0000|Pred Confidence: 0.58 | C 0:0.5521 | C 1:0.8094 | C 2:0.5843| C 3:0.5821| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[2/100] | Loss:0.9500 |Acc: 48.0000|Pred Confidence: 0.60 | C 0:0.5838 | C 1:0.4664 | C 2:0.5720| C 3:0.6351| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[3/100] | Loss:0.8197 |Acc: 48.0000|Pred Confidence: 0.60 | C 0:0.5999 | C 1:0.4970 | C 2:0.6647| C 3:0.6290| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[4/100] | Loss:0.7180 |Acc: 58.0000|Pred Confidence: 0.66 | C 0:0.6701 | C 1:0.5736 | C 2:0.6013| C 3:0.7032| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[5/100] | Loss:0.7325 |Acc: 51.0000|Pred Confidence: 0.62 | C 0:0.6869 | C 1:0.6446 | C 2:0.5649| C 3:0.5105| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[6/100] | Loss:0.8528 |Acc: 49.0000|Pred Confidence: 0.69 | C 0:0.7540 | C 1:0.6075 | C 2:0.6052| C 3:0.6286| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[7/100] | Loss:0.7681 |Acc: 49.0000|Pred Confidence: 0.65 | C 0:0.6902 | C 1:0.6222 | C 2:0.5346| C 3:0.6489| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[8/100] | Loss:0.6675 |Acc: 56.0000|Pred Confidence: 0.67 | C 0:0.7348 | C 1:0.6006 | C 2:0.5407| C 3:0.6534| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[9/100] | Loss:0.7176 |Acc: 47.0000|Pred Confidence: 0.69 | C 0:0.7562 | C 1:0.8017 | C 2:0.5694| C 3:0.5502| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[10/100] | Loss:0.7106 |Acc: 47.0000|Pred Confidence: 0.67 | C 0:0.7985 | C 1:0.5641 | C 2:0.5152| C 3:0.5812| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[11/100] | Loss:0.6262 |Acc: 66.0000|Pred Confidence: 0.67 | C 0:0.7356 | C 1:0.6697 | C 2:nan| C 3:0.6202| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[12/100] | Loss:0.6156 |Acc: 60.0000|Pred Confidence: 0.74 | C 0:0.8208 | C 1:0.8212 | C 2:0.5284| C 3:0.5913| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[13/100] | Loss:0.5894 |Acc: 70.0000|Pred Confidence: 0.75 | C 0:0.8766 | C 1:0.6798 | C 2:nan| C 3:0.6801| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[14/100] | Loss:0.5015 |Acc: 65.0000|Pred Confidence: 0.75 | C 0:0.8936 | C 1:0.9001 | C 2:0.5309| C 3:0.5271| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[15/100] | Loss:0.5602 |Acc: 67.0000|Pred Confidence: 0.82 | C 0:0.9503 | C 1:0.9025 | C 2:0.5946| C 3:0.6399| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[16/100] | Loss:0.6180 |Acc: 69.0000|Pred Confidence: 0.82 | C 0:0.9430 | C 1:0.8761 | C 2:0.5330| C 3:0.6648| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[17/100] | Loss:0.5074 |Acc: 76.0000|Pred Confidence: 0.81 | C 0:0.9613 | C 1:0.9026 | C 2:0.4898| C 3:0.6570| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[18/100] | Loss:0.6521 |Acc: 63.0000|Pred Confidence: 0.87 | C 0:0.9797 | C 1:0.9608 | C 2:0.5817| C 3:0.7292| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[19/100] | Loss:0.7769 |Acc: 50.0000|Pred Confidence: 0.81 | C 0:0.9557 | C 1:0.8937 | C 2:0.5419| C 3:0.5950| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[20/100] | Loss:0.5974 |Acc: 65.0000|Pred Confidence: 0.76 | C 0:0.9528 | C 1:0.7946 | C 2:0.5282| C 3:0.5624| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[21/100] | Loss:0.5452 |Acc: 68.0000|Pred Confidence: 0.87 | C 0:0.9856 | C 1:0.9556 | C 2:0.5890| C 3:0.7026| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[22/100] | Loss:0.5521 |Acc: 61.0000|Pred Confidence: 0.79 | C 0:0.9390 | C 1:0.8918 | C 2:0.5204| C 3:0.5813| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[23/100] | Loss:0.4482 |Acc: 76.0000|Pred Confidence: 0.83 | C 0:0.9848 | C 1:0.9081 | C 2:nan| C 3:0.5992| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[24/100] | Loss:0.5107 |Acc: 75.0000|Pred Confidence: 0.82 | C 0:0.9304 | C 1:0.9804 | C 2:nan| C 3:0.5713| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[25/100] | Loss:0.4317 |Acc: 77.0000|Pred Confidence: 0.82 | C 0:0.9032 | C 1:0.9652 | C 2:nan| C 3:0.5981| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[26/100] | Loss:0.4138 |Acc: 76.0000|Pred Confidence: 0.85 | C 0:0.9754 | C 1:0.9824 | C 2:nan| C 3:0.5828| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[27/100] | Loss:0.3770 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9979 | C 1:0.9965 | C 2:nan| C 3:0.5983| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[28/100] | Loss:0.3741 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9984 | C 1:0.9982 | C 2:nan| C 3:0.5793| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[29/100] | Loss:0.3742 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9991 | C 1:0.9985 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[30/100] | Loss:0.3710 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9994 | C 1:0.9985 | C 2:nan| C 3:0.5881| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[31/100] | Loss:0.3705 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9995 | C 1:0.9985 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[32/100] | Loss:0.3698 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9996 | C 1:0.9986 | C 2:nan| C 3:0.5887| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[33/100] | Loss:0.3688 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9986 | C 2:nan| C 3:0.5899| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[34/100] | Loss:0.3679 |Acc: 79.0000|Pred Confidence: 0.85 | C 0:0.9997 | C 1:0.9987 | C 2:0.5006| C 3:0.5914| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[35/100] | Loss:0.3675 |Acc: 80.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9988 | C 2:0.5114| C 3:0.5961| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[36/100] | Loss:0.3636 |Acc: 77.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9988 | C 2:0.5274| C 3:0.5932| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[37/100] | Loss:0.3773 |Acc: 79.0000|Pred Confidence: 0.86 | C 0:0.9999 | C 1:0.9985 | C 2:0.5060| C 3:0.6213| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[38/100] | Loss:0.3949 |Acc: 67.0000|Pred Confidence: 0.88 | C 0:0.9999 | C 1:0.9975 | C 2:0.5723| C 3:0.6173| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[39/100] | Loss:0.3558 |Acc: 78.0000|Pred Confidence: 0.87 | C 0:0.9999 | C 1:0.9980 | C 2:nan| C 3:0.6026| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[40/100] | Loss:0.3595 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9999 | C 1:0.9984 | C 2:0.5464| C 3:0.6206| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[41/100] | Loss:0.3479 |Acc: 80.0000|Pred Confidence: 0.85 | C 0:0.9999 | C 1:0.9979 | C 2:0.5652| C 3:0.6359| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[42/100] | Loss:0.3009 |Acc: 86.0000|Pred Confidence: 0.86 | C 0:1.0000 | C 1:0.9971 | C 2:0.6487| C 3:0.6932| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[43/100] | Loss:0.2287 |Acc: 91.0000|Pred Confidence: 0.91 | C 0:0.9999 | C 1:0.9958 | C 2:0.8375| C 3:0.7686| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[44/100] | Loss:0.2764 |Acc: 93.0000|Pred Confidence: 0.96 | C 0:0.9999 | C 1:0.9976 | C 2:0.8839| C 3:0.9308| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[45/100] | Loss:0.5213 |Acc: 77.0000|Pred Confidence: 0.91 | C 0:0.9996 | C 1:0.9782 | C 2:0.7625| C 3:0.8102| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[46/100] | Loss:0.6717 |Acc: 70.0000|Pred Confidence: 0.90 | C 0:0.9880 | C 1:0.9692 | C 2:0.7141| C 3:0.7783| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[47/100] | Loss:0.7292 |Acc: 72.0000|Pred Confidence: 0.88 | C 0:0.9859 | C 1:0.9455 | C 2:0.6476| C 3:0.7906| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[48/100] | Loss:0.7159 |Acc: 63.0000|Pred Confidence: 0.84 | C 0:0.9586 | C 1:0.8754 | C 2:0.5461| C 3:0.7849| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[49/100] | Loss:0.5082 |Acc: 66.0000|Pred Confidence: 0.86 | C 0:0.9853 | C 1:0.9977 | C 2:0.5871| C 3:0.5979| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[50/100] | Loss:0.6657 |Acc: 61.0000|Pred Confidence: 0.83 | C 0:0.9241 | C 1:0.9163 | C 2:0.5832| C 3:0.6819| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[51/100] | Loss:0.6319 |Acc: 63.0000|Pred Confidence: 0.85 | C 0:0.9127 | C 1:0.9855 | C 2:0.6138| C 3:0.6951| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[52/100] | Loss:0.6861 |Acc: 62.0000|Pred Confidence: 0.86 | C 0:0.9965 | C 1:0.9486 | C 2:0.6074| C 3:0.6529| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[53/100] | Loss:0.4884 |Acc: 75.0000|Pred Confidence: 0.84 | C 0:0.9998 | C 1:0.9579 | C 2:nan| C 3:0.5960| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[54/100] | Loss:0.7418 |Acc: 60.0000|Pred Confidence: 0.83 | C 0:0.9722 | C 1:0.9362 | C 2:0.5336| C 3:0.6178| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[55/100] | Loss:0.5598 |Acc: 73.0000|Pred Confidence: 0.81 | C 0:0.8943 | C 1:0.9794 | C 2:0.5054| C 3:0.6063| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[56/100] | Loss:0.4070 |Acc: 74.0000|Pred Confidence: 0.83 | C 0:0.9758 | C 1:0.9591 | C 2:0.5437| C 3:0.5747| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[57/100] | Loss:0.7307 |Acc: 66.0000|Pred Confidence: 0.79 | C 0:0.9520 | C 1:0.8693 | C 2:0.5036| C 3:0.6123| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[58/100] | Loss:0.5541 |Acc: 70.0000|Pred Confidence: 0.73 | C 0:0.8685 | C 1:0.7727 | C 2:nan| C 3:0.5892| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[59/100] | Loss:0.5503 |Acc: 74.0000|Pred Confidence: 0.77 | C 0:0.9253 | C 1:0.8631 | C 2:0.5033| C 3:0.5772| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[60/100] | Loss:0.6354 |Acc: 69.0000|Pred Confidence: 0.80 | C 0:0.9419 | C 1:0.9216 | C 2:nan| C 3:0.5931| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[61/100] | Loss:0.6043 |Acc: 66.0000|Pred Confidence: 0.76 | C 0:0.9157 | C 1:0.8298 | C 2:nan| C 3:0.5813| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[62/100] | Loss:0.4711 |Acc: 75.0000|Pred Confidence: 0.80 | C 0:0.9427 | C 1:0.8989 | C 2:nan| C 3:0.5874| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[63/100] | Loss:0.3860 |Acc: 78.0000|Pred Confidence: 0.85 | C 0:0.9758 | C 1:0.9809 | C 2:nan| C 3:0.5883| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[64/100] | Loss:0.3812 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9905 | C 1:0.9966 | C 2:nan| C 3:0.5852| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[65/100] | Loss:0.3778 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9978 | C 1:0.9978 | C 2:nan| C 3:0.5873| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[66/100] | Loss:0.3766 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9989 | C 1:0.9981 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[67/100] | Loss:0.3762 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9992 | C 1:0.9984 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[68/100] | Loss:0.3757 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9993 | C 1:0.9986 | C 2:nan| C 3:0.5863| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[69/100] | Loss:0.3752 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9993 | C 1:0.9988 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[70/100] | Loss:0.3750 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9994 | C 1:0.9989 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[71/100] | Loss:0.3747 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9994 | C 1:0.9990 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[72/100] | Loss:0.3744 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9995 | C 1:0.9990 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[73/100] | Loss:0.3742 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9995 | C 1:0.9991 | C 2:nan| C 3:0.5861| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[74/100] | Loss:0.3740 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9996 | C 1:0.9992 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[75/100] | Loss:0.3738 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9996 | C 1:0.9992 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[76/100] | Loss:0.3737 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9996 | C 1:0.9993 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[77/100] | Loss:0.3735 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9996 | C 1:0.9993 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[78/100] | Loss:0.3734 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9993 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[79/100] | Loss:0.3732 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9994 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[80/100] | Loss:0.3732 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9994 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[81/100] | Loss:0.3730 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9994 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[82/100] | Loss:0.3731 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9994 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[83/100] | Loss:0.3728 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9995 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[84/100] | Loss:0.3730 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9995 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[85/100] | Loss:0.3726 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9997 | C 1:0.9995 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[86/100] | Loss:0.3729 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9995 | C 2:nan| C 3:0.5860| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[87/100] | Loss:0.3724 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9995 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[88/100] | Loss:0.3727 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[89/100] | Loss:0.3723 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5856| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[90/100] | Loss:0.3726 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5861| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[91/100] | Loss:0.3721 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5856| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[92/100] | Loss:0.3724 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5857| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[93/100] | Loss:0.3719 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5856| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[94/100] | Loss:0.3722 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5861| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[95/100] | Loss:0.3717 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9996 | C 2:nan| C 3:0.5857| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[96/100] | Loss:0.3720 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9997 | C 2:nan| C 3:0.5857| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[97/100] | Loss:0.3715 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9997 | C 2:nan| C 3:0.5857| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[98/100] | Loss:0.3718 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9997 | C 2:nan| C 3:0.5858| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[99/100] | Loss:0.3714 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9998 | C 1:0.9997 | C 2:nan| C 3:0.5855| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Epoch[100/100] | Loss:0.3718 |Acc: 78.0000|Pred Confidence: 0.86 | C 0:0.9999 | C 1:0.9997 | C 2:nan| C 3:0.5859| C 4:nan| C 5:nan| C 6:nan| C 7:nan| C 8:nan| C 9:nan| C 10:nan| C 11:nan
+Test 1 Accuracy 66.0 | Confidence ({0: array([0.9939608], dtype=float32), 1: array([0.9915255], dtype=float32), 3: array([0.5574001], dtype=float32)}, 0.8476288)
+Train 1 Accuracy 78.0 | Confidence ({0: array([0.99989593], dtype=float32), 1: array([0.9996874], dtype=float32), 3: array([0.5576128], dtype=float32)}, 0.8523987)

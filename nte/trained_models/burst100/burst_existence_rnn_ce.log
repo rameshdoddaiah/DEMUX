@@ -1,0 +1,45 @@
+Config: 
+ {
+  "model_save_path": "/Users/prathyushsp/Git/TimeSeriesSaliencyMaps/nte/trained_models/burst/",
+  "model": "rnn",
+  "loss": "ce",
+  "model_name": "burst_existence_rnn_ce",
+  "dependency_meta": {
+    "md5": "4c2b11caa5e99ea79e85a222a46bfb08",
+    "timestamp": "2020-04-29 19:41:11.275192"
+  },
+  "timesteps": 100,
+  "num_classes": 2,
+  "rnn_config": {
+    "ninp": 1,
+    "nhid": 10,
+    "nlayers": 1,
+    "nclasses": 2
+  },
+  "dnn_config": {
+    "layers": [
+      50,
+      20,
+      2
+    ]
+  },
+  "batch_size": 32,
+  "num_epochs": 10,
+  "learning_rate": 0.001
+}
+Model: 
+ RNN(
+  (rnn_cell): GRU(1, 10, batch_first=True)
+  (fc1): Linear(in_features=10, out_features=2, bias=True)
+)
+Epoch [1/10] | Loss: 0.7067 |  Accuracy: 0.4900 | Prediction Confidence: 0.57 | Class 0:0.5663 | Class 1:nan
+Epoch [2/10] | Loss: 0.6941 |  Accuracy: 0.4925 | Prediction Confidence: 0.51 | Class 0:0.5147 | Class 1:0.5052
+Epoch [3/10] | Loss: 0.6934 |  Accuracy: 0.5100 | Prediction Confidence: 0.51 | Class 0:nan | Class 1:0.5078
+Epoch [4/10] | Loss: 0.6930 |  Accuracy: 0.5100 | Prediction Confidence: 0.51 | Class 0:nan | Class 1:0.5100
+Epoch [5/10] | Loss: 0.6692 |  Accuracy: 0.5163 | Prediction Confidence: 0.54 | Class 0:0.5044 | Class 1:0.5418
+Epoch [6/10] | Loss: 0.1864 |  Accuracy: 1.0000 | Prediction Confidence: 0.84 | Class 0:0.8179 | Class 1:0.8644
+Epoch [7/10] | Loss: 0.0179 |  Accuracy: 1.0000 | Prediction Confidence: 0.98 | Class 0:0.9816 | Class 1:0.9830
+Epoch [8/10] | Loss: 0.0085 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9915 | Class 1:0.9915
+Epoch [9/10] | Loss: 0.0053 |  Accuracy: 1.0000 | Prediction Confidence: 0.99 | Class 0:0.9948 | Class 1:0.9947
+Epoch [10/10] | Loss: 0.0037 |  Accuracy: 1.0000 | Prediction Confidence: 1.00 | Class 0:0.9964 | Class 1:0.9962
+Test Accuracy 100.0 | Confidence ({0: array([0.9968822], dtype=float32), 1: array([0.99675953], dtype=float32)}, 0.99682087)

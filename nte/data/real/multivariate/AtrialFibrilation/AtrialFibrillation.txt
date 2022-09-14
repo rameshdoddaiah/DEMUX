@@ -1,0 +1,13 @@
+ECG_AtrialFibrilation Description:
+This dataset of two-channel ECG recordings has been created from data used in the Computers in Cardiology Challenge 2004, an open competition with the goal of developing automated methods for predicting spontaneous termination of atrial fibrillation (AF).
+The raw instances were 5 second segments of atrial fibrillation, containing two ECG signals, each sampled at 128 samples per second.
+The Multivate data organises these channels such that each is one dimension.
+The class labels are: n, s and t.
+class n is described as a non termination artiral fibrilation(that is, it did not terminate for at least one hour after the original recording of the data).
+class s is described as an atrial fibrilation that self terminates at least one minuet after the recording process.
+class t is descirbed as terminating immediatly, that is within one second of the recording ending.
+
+ECG_AtrialFibrilation Reference:
+Webpage: https://www.physionet.org/physiobank/database/aftdb/
+PhysioNet Refference: Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh, Mark RG, Mietus JE, Moody GB, Peng CK, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals. Circulation 101(23):e215-e220 [Circulation Electronic Pages; http://circ.ahajournals.org/content/101/23/e215.full]; 2000 (June 13). PMID: 10851218; doi: 10.1161/01.CIR.101.23.e215
+Publication: Moody GB. Spontaneous Termination of Atrial Fibrillation: A Challenge from PhysioNet and Computers in Cardiology 2004. Computers in Cardiology 31:101-104 (2004).

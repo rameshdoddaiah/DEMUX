@@ -1,0 +1,8 @@
+dill
+numpy == 1.19.2
+pandas
+tensorflow == 2.5.0
+stumpy
+pyts
+
+matplotlib
