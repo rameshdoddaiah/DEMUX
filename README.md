@@ -13,4 +13,4 @@ class-specific saliency maps that remain faithful to the classifier’s behavior
 art alternatives on five popular datasets when explaining two types of deep time series classifiers. Further, through a case study, we demonstrate that DEMUX’s explanations indeed highlight
 what separates the predicted class from the others in the eyes of the classifier.
 
-https://github.com/rameshdoddaiah/DEMUX/blob/master/Class-Specific%20XAI%20Methods%20Runtime%20Performance.jpg
+![plot](./Class-Specific%20XAI%20Methods%20Runtime%20Performance.jpg)
