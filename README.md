@@ -9,4 +9,14 @@ Abstract—Explainability helps users trust deep learning solu-tions for time se
 art alternatives on five popular datasets when explaining two types of deep time series classifiers. Further, through a case study, we demonstrate that DEMUX’s explanations indeed highlight what separates the predicted class from the others in the eyes of the classifier.
 
 **XAI methods run time performance on ACSF1 dataset and Fully Connected Network**
+
+
 ![plot](./Class-Specific%20XAI%20Methods%20Runtime%20Performance.jpg)
+
+
+
+
+**Hyper Parameter Table**
+
+
+![plot](./Hyper%20parameter%20table.jpg)
