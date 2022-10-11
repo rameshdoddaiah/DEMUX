@@ -46,7 +46,7 @@ git clone https://github.com/rameshdoddaiah/DEMUX
 cd DEMUX && pip install -r requirements.txt
 ```
 
-## Reproduction
+## Reproducing our results
 ```bash
 python3 main.py --pname ICDM --task_id ${SLURM_ARRAY_TASK_ID} \
                  --run_mode turing --jobs_per_task 10\
@@ -91,7 +91,7 @@ python3 main.py --pname ICDM --task_id ${SLURM_ARRAY_TASK_ID} \
 ## Cite
 ```bash
 @inproceedings{doddaiah2022classspecific,
-  author  = {Doddaiah, Ramesh and Parvatharaju, Prathyush and Hartvigsen, Thomas and Rundensteiner, Elke},
+  author  = {Doddaiah, Ramesh and Parvatharaju, Prathyush and Rundensteiner, Elke and Hartvigsen, Thomas},
   title   = {Class-Specific Explainability for Deep Time Series Classifiers},
   booktitle = {IEEE International Conference on Data Mining},
   year    = 2022,
