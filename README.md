@@ -1,14 +1,3 @@
-<!-- Start of Badges -->
-![version badge](https://img.shields.io/badge/rainbow--print%20version-0.0.0-green.svg)
-![build](https://github.com/kingspp/rainbow-print/workflows/Release/badge.svg)
-![coverage badge](https://img.shields.io/badge/coverage-0.00%25|%200.0k/0k%20lines-green.svg)
-![test badge](https://img.shields.io/badge/tests-0%20total%7C0%20%E2%9C%93%7C0%20%E2%9C%98-green.svg)
-![docs badge](https://img.shields.io/badge/docs-none-green.svg)
-![commits badge](https://img.shields.io/badge/commits%20since%20v0.0.0-0-green.svg)
-![footprint badge](https://img.shields.io/badge/mem%20footprint%20-0.00%20Mb-green.svg)
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/ramesh.doddaiah@gmail.com)
-<!-- End of Badges -->
-
 # DEMUX
 #ICDM 2022 research paper code repository , runtime performance and hyper parameter table
 
