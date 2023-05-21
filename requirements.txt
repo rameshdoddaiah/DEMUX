@@ -1,0 +1,74 @@
+traitlets #==4.3.3
+matplotlib #==3.2.0
+torch #==1.4.0
+pandas #==1.0.1
+numpy #==1.18.1
+torchvision #==0.5.0
+# scikit_learn==0.22.2.post1
+shap
+lime
+sty
+munch
+wandb
+opencv-python
+pillow
+shortuuid
+seaborn
+plotly
+fastdtw
+# tslearn
+kneed
+ipykernel
+rainbow-print
+
+# Lasts Requirements
+joblib
+keras
+tensorflow==1.13.1
+keras==2.2.5
+jupyter
+pandas
+matplotlib
+scikit-learn==0.23.1
+dill
+imbalanced-learn==0.5.0
+requests
+bitarray
+tslearn==0.2.5
+tqdm
+terminaltables
+cython
+spyder==3.3.6
+shap
+pyts
+graphviz
+# python-graphviz
+pydot
+stumpy
+torchvision
+deap
+liac-arff
+scikit-multilearn
+ruptures
+sktime==0.4.1
+h5py==2.10.0
+
+
+
+
+
+# TS - MULE Requirements
+dill
+# tensorflow == 2.5.0
+stumpy
+pyts
+nte/models/saliency_model/tsmule/ts_mule
+
+
+# Time Shap
+nte/models/saliency_model/timeshap
+
+zipp 
+click 
+scipy==1.6.0 
+jsonschema
